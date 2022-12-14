@@ -1,0 +1,10 @@
+.row{
+    max-width: 1200px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, max-content));
+    column-gap: 30px;
+    grid-auto-flow: dense;
+    justify-content: center;
+    padding: initial;
+}
