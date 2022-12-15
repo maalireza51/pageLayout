@@ -3,10 +3,6 @@ import "./style.css"
 
 export default function Navbar() {
 
-  // let activeStyle = {
-  //   textDecoration: "underline",
-  // };
-
   let activeClassName = "navbar__item navbar__item--selected";
 
   return (
@@ -31,7 +27,7 @@ export default function Navbar() {
       >
         Comments
       </NavLink>
-      
+
       <div className='navbar__title navbar__item'>PageLayout</div>
     </nav>
   )
