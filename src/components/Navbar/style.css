@@ -34,7 +34,17 @@ a.navbar__item {
   transition: 0.5s;
 }
 
+a.navbar__item:focus {
+  scale: 1.1;
+  font-size: 18px;
+}
+
 a.navbar__item:hover {
+  padding: 10px 16px;
+  border-bottom: 3px solid #ffffff;
+}
+
+a.navbar__item--selected {
   padding: 10px 16px;
   border-bottom: 3px solid #ffffff;
 }

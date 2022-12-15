@@ -1,12 +1,37 @@
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import "./style.css"
 
 export default function Navbar() {
+
+  // let activeStyle = {
+  //   textDecoration: "underline",
+  // };
+
+  let activeClassName = "navbar__item navbar__item--selected";
+
   return (
     <nav className='navbar'>
-      <Link to="/" className='navbar__item'>Home</Link>
-      <Link to="/blog" className='navbar__item'>Blog</Link>
-      <Link to="/comment" className='navbar__item'>Comments</Link>
+      <NavLink to="/" className={
+        ({ isActive }) =>
+          isActive ? activeClassName : "navbar__item"}
+      >
+        Home
+      </NavLink>
+
+      <NavLink to="/blog" className={
+        ({ isActive }) =>
+          isActive ? activeClassName : "navbar__item"}
+      >
+        Blog
+      </NavLink>
+
+      <NavLink to="/comment" className={
+        ({ isActive }) =>
+          isActive ? activeClassName : "navbar__item"}
+      >
+        Comments
+      </NavLink>
+      
       <div className='navbar__title navbar__item'>PageLayout</div>
     </nav>
   )
