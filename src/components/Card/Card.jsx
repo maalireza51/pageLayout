@@ -21,7 +21,7 @@ export default function Card({ data }) {
                 </div>
 
                 <div className="card-link">
-                    <Link to={data.target} title="Read Full"><span>Read Full</span></Link>
+                    <Link to={data.target} title="Read Full"><span>Read Comment</span></Link>
                 </div>
             </div>
         </div>

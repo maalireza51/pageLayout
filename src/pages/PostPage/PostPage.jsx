@@ -30,8 +30,8 @@ export default function PostPage() {
   return (
     <Layout>
       <>
-        POST PAGE
-        {!(id.id) ? <ul>{list}</ul> : <> COMMENTS: <ul>{message}</ul></>}
+        <h1>COMMENTS PAGE</h1>
+        {!(id.id) ? <ul>{list}</ul> : <> {list} <br/><hr/><ul>{message}</ul></>}
       </>
     </Layout>
   )
